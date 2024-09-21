@@ -1,5 +1,6 @@
 import random
-word_list = ['avd', 'acv', 'qwe']
+from hangman_img import stages
+word_list = ['difficult', 'trouble', 'worthy', 'gold', 'understand', 'future', 'decision', 'motion']
 chosen_word = random.choice(word_list)
 end_of_game = False
 lives = 6
@@ -26,3 +27,5 @@ while not end_of_game:
     if '_' not in display:
         end_of_game = True
         print("You Won!")
+    print(stages[lives])
+
